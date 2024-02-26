@@ -1,0 +1,6 @@
+steps:
+
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['pubsub', 'topics', 'create', 'projects/dotz-noverde-dev/topics/teste2']
+    id: create_topic
+    allowExitCodes: [1]
